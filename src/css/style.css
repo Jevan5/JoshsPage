@@ -1,0 +1,55 @@
+body, html {
+    height: 100%;
+}
+
+h5 {
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+}
+
+#welcome {
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../../assets/images/background.jpg");
+    height: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main {
+    position: relative;
+}
+
+#mainChild {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 60%;
+    margin: auto;
+    text-align: center;
+}
