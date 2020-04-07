@@ -5,8 +5,8 @@ JoshsPage
 >
 > Provide a personal webpage of mine, highlighting my interests and projects.
 
-**Support:**
+**Contact:**
 
 |Name|Email|Phone Number|
 |:---|:----|:-----------|
-|Joshua Evans|jevan5@uwo.ca|613-724-8991|
+|Joshua Evans|joshevans.tk@gmail.com|613-724-8991|

@@ -3,6 +3,8 @@ var app     = express();
 var path    = require('path');
 const https = require ('https');
 const fs    = require('fs');
+const key   = '/etc/letsencrypt/live/joshuaevans.ca/fullchain.pem';
+const cert  = '/etc/letsencrypt/live/joshuaevans.ca/privkey.pem';
 
 // Main page
 app.get('/', function(req, res) {
@@ -34,7 +36,7 @@ app.get('/assets/files/:file', function(req, res) {
 
 const port = 423;
 https.createServer({
-    key: fs.readFileSync(""),   // Path to private key
-    cert: fs.readFileSync("")   // Path to certificate
+    key: fs.readFileSync(key),   // Path to private key
+    cert: fs.readFileSync(cert)   // Path to certificate
 }, app).listen(port);
 console.log('Listening on localhost:' + port);

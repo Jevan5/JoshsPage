@@ -1,18 +1,26 @@
 {
   "name": "joshspage",
   "version": "1.0.0",
-  "description": "",
+  "description": "JoshsPage\r =========",
   "main": "server.js",
-  "dependencies": {
-    "bootstrap": "^4.1.3",
-    "express": "^4.16.4",
-    "nodemon": "^1.18.6"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jevan5/JoshsPage.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jevan5/JoshsPage/issues"
+  },
+  "homepage": "https://github.com/Jevan5/JoshsPage#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  }
 }
