@@ -47,53 +47,45 @@
             </div>
         </nav> <!--/Navigation bar -->
 
-        <div class="main" id="welcome"> <!-- Jumbotron -->
-            <div class="container mainChild">
-                <div class="row" id="mainChild">
-                    <div class="col-md-1.5"></div>
-                    <div class="col-md-9">
-                        <h1>
-                            Joshua Evans
-                        </h1>
-                        <h4>
-                            [josh-oo-uh ev-ins]
-                        </h4>
-                        <h4>
-                            <i>Noun</i>
-                        </h4>
-                        <br>
-                        <h6>
-                            "A passionate developer who enjoys"
-                        </h6>
-                    </div>
-                    <div class="col-md-1.5"></div>
-                </div>
-            </div>
-        </div> <!--/Jumbotron -->
-
-        <br>
-
         <div class="container"> <!-- Main body -->
-            <div class="row" id="aboutMe"> <!-- About me -->
-                <div class="col-md-3"></div>
+            <div class="row">
                 <div class="col-md-6">
                     <div class="card bg-light mb-6 shadow-sm">
-                        <img class="card-img-top" src="../assets/images/me.jpg" alt="Card image cap">
+                        <img class='card-img-top' src='../assets/images/me.jpg' alt='Card image cap'>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1>
+                        Joshua Evans
+                    </h1>
+                    <h4>
+                        [josh-oo-uh ev-ins]
+                    </h4>
+                    <h4>
+                        <i>Noun</i>
+                    </h4>
+                    <br>
+                    <h6>
+                        "A passionate developer who enjoys trying new things and making mistakes."
+                    </h6>
+                    <hr>
+                    <i>Chase passions.</i>
+                </div>
+            </div>
+
+            <div class='row' id='aboutMe'> <!-- About me -->
+                <div class="col-md-6">
+                    <div class='card bg-light mb-6 shadow-sm'>
                         <div class="card-body">
                             <p class="card-text">
-                                I'm a <strong>recent software engineering graduate</strong> from Ottawa, Ontario. I enjoy developing full-stack applications from the ground up, implementing robust RESTful APIs that support other developers, and figuring out a database design that serves the intended functionality with the highest optimizations. I always strive to write clean, extensible, testable, and secure code. When I'm not staring at a computer screen, which <i>really</i> isn't that often, I like to clear my head by working out (weights and running), and 
-                                I love to lift weights and spend as much time as I can exploring whatever the city I'm in has to offer.
+                                I'm a <strong>recent software engineering graduate of Western University</strong> from Ottawa, Ontario. I enjoy developing full-stack applications from the ground up, implementing robust RESTful APIs that support other developers, and figuring out a database design that serves the intended functionality with the highest optimizations. I always strive to write clean, extensible, testable, and secure code.
+                                <br><br>
+                                As much as I <i>looove </i> programming, it is important for me (<strong>and you too!</strong>) to take breaks. The best way to clear my head is by working out, either by lifting weights or running. If I want to relax but also feel productive, I'll read a book, typically non-fiction surrounding psychology.
                             </p>
-                            <hr>
-                            <p>
-                                <i>Chase passions.</i>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3"></div>
-            </div> <!--/About me -->
-
-            <br>
+            </div> <!--/About me-->
 
             <div class="row" id="resume"> <!-- Resume -->
                 <div class="col-md-3"></div>
@@ -115,10 +107,8 @@
                 <div class="col-md-3"></div>
             </div> <!--/Resume -->
 
-            <br>
-
-            <div class="row" id="projects"> <!-- Projects -->
-                <div class="col-md-6">
+            <div class='row' id='projects'>
+                <div class="col-md-9">
                     <div class="card bg-light mb-6 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">
@@ -133,31 +123,34 @@
                         </div>
                     </div>
                 </div>
-                
-                <br><br><br><br><br><br><br><br><br>
-                
-                <div class="col-md-6">
+            </div>
+
+            <div class='row'>
+                <div class="col-md-9">
                     <div class="card bg-light mb-6 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">
                                 SpendSense
                             </h5>
                             <p class="card-text">
-                                Income is easy to track because it usually comes from one source. How about expenses? Puh-lease, who has the time for manual data entry and spreadsheets.
-                                <br>
-                                <br>
-                                Get a better sense of your spending with <i>SpendSense</i>.
+                                Income is easy to track because it usually comes from one source. However, when it comes to expenses, who has the time for manual data entry and spreadsheets?
+                                <br><br>
+                                That's why we've automated it for you.
                             </p>
-                            <a href="https://joshuaevans.ca:<SpendSense Port>">
+                            <hr>
+                            <p>
+                                <i>Get a better sense of your spending.</i>
+                            </p>
+                            <a href="https://joshuaevans.ca:8000" class='btn btn-primary'>
                                 View
                             </a>
                         </div>
                     </div>
                 </div>
-
-                <br><br><br><br><br><br><br><br><br>
-
-                <div class="col-md-6">
+            </div>
+            
+            <div class='row'>
+                <div class="col-md-9">
                     <div class="card bg-light mb-6 shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title">
@@ -170,35 +163,24 @@
                             <p>
                                 <i>Practice trading without fear.</i>
                             </p>
-                            <a href="https://joshuaevans.ca:<DMTrade Port>" class="btn btn-primary">
+                            <a href="https://joshuaevans.ca:8010" class="btn btn-primary">
                                 View
                             </a>
                         </div>
                     </div>
                 </div>
-            </div> <!--/Projects -->
+            </div>
         </div> <!--/Main body -->
-
         <hr>
         <footer class="page-footer font-small blue pt-4">
             <div class="container-fluid text-md-left" id="contact">
-                <div class="row">
+                <div>
                     <h5 class="text-uppercase">
                         Contact
                     </h5>
                     <p>
-                        Feel free to contact me below.
+                        <a href='mailto:joshevans.tk@gmail'>joshevans.tk@gmail.com</a> | 613-724-8991
                     </p>
-                </div>
-                <div class="row">
-                    <p>
-                        <a href="mailto:jevan5@uwo.ca">
-                            jevan5@uwo.ca
-                        </a>
-                    </p>
-                </div>
-                <div class="row">
-                    <p>613-724-8991</p>
                 </div>
             </div>
         </footer>

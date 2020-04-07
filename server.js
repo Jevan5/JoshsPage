@@ -34,9 +34,11 @@ app.get('/assets/files/:file', function(req, res) {
     res.sendFile(path.join(__dirname + '/assets/files/' + req.params.file));
 });
 
-const port = 423;
-https.createServer({
-    key: fs.readFileSync(key),   // Path to private key
-    cert: fs.readFileSync(cert)   // Path to certificate
-}, app).listen(port);
+// const port = 423;
+const port = 80;
+app.listen(port);
+// https.createServer({
+//     key: fs.readFileSync(key),   // Path to private key
+//     cert: fs.readFileSync(cert)   // Path to certificate
+// }, app).listen(port);
 console.log('Listening on localhost:' + port);
