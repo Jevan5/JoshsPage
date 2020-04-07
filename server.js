@@ -1,10 +1,13 @@
-var express = require('express');
-var app     = express();
-var path    = require('path');
-const https = require ('https');
-const fs    = require('fs');
-const key   = '/etc/letsencrypt/live/joshuaevans.ca/privkey.pem';
-const cert  = '/etc/letsencrypt/live/joshuaevans.ca/fullchain.pem';
+const express   = require('express');
+const app       = express();
+const path      = require('path');
+const http      = require('http');
+const https     = require ('https');
+const fs        = require('fs');
+const key       = '/etc/letsencrypt/live/joshuaevans.ca/privkey.pem';
+const cert      = '/etc/letsencrypt/live/joshuaevans.ca/fullchain.pem';
+const httpPort	= 80;
+const httpsPort	= 443;
 
 // Main page
 app.get('/', function(req, res) {
@@ -34,11 +37,18 @@ app.get('/assets/files/:file', function(req, res) {
     res.sendFile(path.join(__dirname + '/assets/files/' + req.params.file));
 });
 
-// const port = 423;
-const port = 80;
-app.listen(port);
-// https.createServer({
-//     key: fs.readFileSync(key),   // Path to private key
-//     cert: fs.readFileSync(cert)   // Path to certificate
-// }, app).listen(port);
-console.log('Listening on localhost:' + port);
+
+https.createServer({
+     key: fs.readFileSync(key),   // Path to private key
+     cert: fs.readFileSync(cert)   // Path to certificate
+}, app).listen(httpsPort, () => {
+    console.log(`Listening on ${httpsPort} for HTTPS connections`);
+});
+
+http.createServer((req, res) => {
+    res.writeHead(301, { "Location": "https://" + req.headers.host + req.url });
+    res.end();
+}).listen(httpPort, () => { 
+    console.log(`Listening on ${httpPort} for HTTP connections`);
+});
+
