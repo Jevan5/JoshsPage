@@ -3,8 +3,8 @@ var app     = express();
 var path    = require('path');
 const https = require ('https');
 const fs    = require('fs');
-const key   = '/etc/letsencrypt/live/joshuaevans.ca/fullchain.pem';
-const cert  = '/etc/letsencrypt/live/joshuaevans.ca/privkey.pem';
+const key   = '/etc/letsencrypt/live/joshuaevans.ca/privkey.pem';
+const cert  = '/etc/letsencrypt/live/joshuaevans.ca/fullchain.pem';
 
 // Main page
 app.get('/', function(req, res) {
