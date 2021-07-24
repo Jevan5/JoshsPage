@@ -4,8 +4,8 @@ const path      = require('path');
 const http      = require('http');
 const https     = require ('https');
 const fs        = require('fs');
-const key       = '../../cert/server.key';
-const cert      = '../../cert/server.crt';
+const key       = '../cert/server.key';
+const cert      = '../cert/server.crt';
 const httpPort	= 80;
 const httpsPort	= 443;
 
