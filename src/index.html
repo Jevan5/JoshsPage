@@ -31,9 +31,10 @@ ul { padding-left: 0; }
         </div>
         <div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Ottawa, Canada</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Toronto, ON, Canada</p>
           <p><a class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal" href='mailto:joshevans.tk@gmail.com'></a>joshevans.tk@gmail.com</p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1 (613) 724-8991</p>
+
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
@@ -53,7 +54,7 @@ ul { padding-left: 0; }
               <div class="w3-center w3-text-white">Proficient</div>
             </div>
           </div>
-          <p>Python</p>
+          <p>MySQL</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-green" style="width:100%">Proficient</div>
           </div>
@@ -73,7 +74,7 @@ ul { padding-left: 0; }
           <div class='w3-light-grey w3-round-xlarge w3-small'>
             <div class='w3-container w3-center w3-round-xlarge w3-lime' style='width:80%'>Familiar</div>
           </div>
-          <p>MySQL</p>
+          <p>Python</p>
           <div class='w3-light-grey w3-round-xlarge w3-small'>
             <div class='w3-container w3-center w3-round-xlarge w3-lime' style='width:80%'>Familiar</div>
           </div>
@@ -98,7 +99,11 @@ ul { padding-left: 0; }
         <h2 class='w3-text-grey w3-padding-16'><i class='fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal'></i>Bio</h2>
         <div class='w3-container'>
           <h5 class='w3-opacity'><b>About Me</b></h5>
-          <p>I'm a recent software engineering graduate from Ottawa, Ontario. I enjoy developing full-stack applications from the ground up, implementing robust RESTful APIs that support other developers, and finding optimizations in database design. I always strive to write clean, extensible, testable, and secure code, so that the things I develop can continue to be improved by myself and others.<br><br>In my free time, you can catch me at the gym or on the tennis court.</p>
+          <p>
+            I am a software developer from Ottawa, Ontario. I enjoy developing applications that run on top of scalable cloud-infrastructure. I always make an effort to write clean, extensible, testable, and secure code, so that the things I develop can continue to be improved by myself and others.
+            <br><br>
+            In my free time, you can catch me at the gym or on the tennis court.
+          </p>
         </div>
       </div>
 
@@ -121,6 +126,22 @@ ul { padding-left: 0; }
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Software Developer / Desire2Learn</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2020 - Now</h6>
+          <ul>
+            <li>
+              Contributed to online client upgrades, which involved upgrading application-level servers and migrating tables. The migrated tables contained tens of millions of rows, so the SQL scripts to migrate the data were written to optimize performance and minimize the time for held locks. Additionally, the databases being migrated had to behave properly while pre- and post-upgrade servers were querying them at the same time.
+            </li>
+            <li>
+              Worked with designers to develop a reusable web component using LitElement to make the video streaming process consistent for users across different browsers and devices. Additionally, integrated the web component into many areas of an application, where an entirely different player was previously implemented in each case, to improve maintainability.
+            </li>
+            <li>
+              Load tested a video streaming application served through EBS, by deploying a loader EBS that would simulate thousands of users requesting access to the application per second.              
+            </li>
+          </ul>
+          <hr>
+        </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Software Developer - Intern / Canadian Pension Plan Invesment Board</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2019 - August 2019</h6>
@@ -160,15 +181,10 @@ ul { padding-left: 0; }
       <div class='w3-container w3-card w3-white'>
         <h2 class='w3-text-grey w3-padding-16'><i class ='fa fa-wrench fa-fw w3-margin-right w3-text-teal'></i>Projects</h2>
         <div class='w3-container'>
-          <h5 class='w3-opacity'><b>SpendSense</b></h5>
-          <p>SpendSense is a mobile-application which uses computer vision to parse images of receipts, then learns to automatically categorize items for the user to breakdown and track their spending to help users evaluate their financial activity with ease.</p>
-          <a class='w3-button w3-teal' href='http://joshuaevans.ca:8000'>Visit</a>
-        </div>
-        <hr>
-        <div class='w3-container'>
-          <h5 class='w3-opacity'><b>DM Trade</b></h5>
-          <p>DM Trade is a web-application which allows users to practice trading on NASDAQ with virtual currency, and observe the performance of their portfolios using real-time data.</p>
-          <a class='w3-button w3-teal' href='https://joshuaevans.ca:8010'>Visit</a>
+          <h5 class='w3-opacity'><b>Plantee</b></h5>
+          <p>Plantee is an iOS application that allows users to track the watering of their plants. Users can create a registry of their plants, and receive notifications when it is time to water them.</p>
+          <a class='w3-button w3-teal' href='https://apps.apple.com/us/app/plantee/id1532618249'>Download</a>
+          <a class='w3-button w3-teal' href='https://github.com/Jevan5/plantee'>View Code</a>
         </div>
         <br>
       </div>

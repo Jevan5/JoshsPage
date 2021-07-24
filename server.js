@@ -4,8 +4,8 @@ const path      = require('path');
 const http      = require('http');
 const https     = require ('https');
 const fs        = require('fs');
-const key       = '/etc/letsencrypt/live/joshuaevans.ca/privkey.pem';
-const cert      = '/etc/letsencrypt/live/joshuaevans.ca/fullchain.pem';
+const key       = '../../cert/server.key';
+const cert      = '../../cert/server.crt';
 const httpPort	= 80;
 const httpsPort	= 443;
 
@@ -46,9 +46,9 @@ https.createServer({
 });
 
 http.createServer((req, res) => {
-    res.writeHead(301, { "Location": "https://" + req.headers.host + req.url });
+    res.writeHead(301, { "Location": `https://${req.headers.host}${req.url}` });
     res.end();
-}).listen(httpPort, () => { 
+}, app).listen(httpPort, () => { 
     console.log(`Listening on ${httpPort} for HTTP connections`);
 });
 
